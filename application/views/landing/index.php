@@ -45,41 +45,35 @@
                 </div>
             </div>
 
-            <div class="row mt-5 pt-4">
-                <div class="col-lg-6">
-                    <div class="services-box p-4 mt-4">
+            <?php 
+
+            foreach(array_chunk($berkas->result(), 2) as $entriesRow) {
+                echo '<div class="row mt-5 pt-4">';
+                foreach ($entriesRow as $row) {
+                    ?>
+                    <div class="col-lg-6">
+                            <div class="services-box p-4 mt-4">
                         
-                        <a href="https://ais-research.telkomuniversity.ac.id/berasFIT/" target="_blank">
-                            <img style="border-radius: 2%;" src="<?= base_url(); ?>/public/assets/images/berasfit.PNG" height="100%" width="100%">
-                        </a>
+                            <a href="#" target="_blank">
+                                <img style="border-radius: 2%;" src="data:<?php echo $row->nama_thumbnail; ?>;base64,<?php echo $row->thumbnail; ?>" height="100%" width="100%">
+                            </a>
 
-                        <h5 class="mt-4"><a href="https://ais-research.telkomuniversity.ac.id/berasFIT/" target="_blank">BerasFIT</a></h5>
-                        <p class="text-muted mt-3">Aplikasi untuk klasifikasi kualitas beras dan prediksi usia simpan beras.</p>
+                            <h5 class="mt-4"><a href="#" target="_blank"><?php echo $row->nama_project; ?></a></h5>
+                            <p class="text-muted mt-3"><?php echo $row->deskripsi_project; ?></p>
 
-                        <div class="mt-3">
-                            <a href="https://ais-research.telkomuniversity.ac.id/berasFIT/" target="_blank" class="text-primary f-16">Learn More <i class="mdi mdi-arrow-right ml-1"></i></a>
+                            <div class="mt-3">
+                                <a href="#" target="_blank" class="text-primary f-16">Learn More <i class="mdi mdi-arrow-right ml-1"></i></a>
+                            </div>
+
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="services-box p-4 mt-4">
-
-                        <a href="https://ais-research.telkomuniversity.ac.id/corona/" target="_blank">
-                            <img style="border-radius: 2%;" src="<?= base_url(); ?>/public/assets/images/corona.PNG" height="100%" width="100%">
-                        </a>
-
-                        <h5 class="mt-4"><a href="https://ais-research.telkomuniversity.ac.id/corona/" target="_blank">Cek Perkembangan Corona</a></h5>
-                        <p class="text-muted mt-3">Aplikasi untuk pemantauan perkembangan virus COVID-19 di Indonesia.</p>
-
-                        <div class="mt-3">
-                            <a href="https://ais-research.telkomuniversity.ac.id/corona/" target="_blank" class="text-primary f-16">Learn More <i class="mdi mdi-arrow-right ml-1"></i></a>
                         </div>
+                <?php
+                }
+                echo '</div>';
+            }
 
-                    </div>
-                </div>
-            </div>
+            ?>
+            
         </div>
     </section>
     <!-- END SERVICES -->

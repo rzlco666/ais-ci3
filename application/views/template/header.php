@@ -5,8 +5,8 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
         <div class="container">
             <!-- LOGO -->
-            <a class="navbar-brand logo text-uppercase" href="index.html">
-                <img src="<?= base_url(); ?>/public/assets//images/logo-FIT.png" alt="" height="22">
+            <a class="navbar-brand logo text-uppercase" href="<?= base_url(); ?>">
+                <img src="<?= base_url(); ?>/public/assets/images/logo-FIT.png" alt="" height="22">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
