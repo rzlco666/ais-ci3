@@ -1,0 +1,57 @@
+//
+// variables.scss
+//
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap');
+
+
+$primary:   #1ea59a;
+$success:   #00c99c;
+$info:      #15b2ec;
+$warning:   #f5a416;
+$danger:    #fb7179;
+$orange:    #fff8f6;
+$purple:    #9261c6;
+$pink:      #f12699;
+$white:     #ffffff;
+$dark:      #1e3547;
+$light:     #f0f9fa;
+$muted:     #828f99;
+
+// stylelint-disable
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #efefef;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #89a2b5;
+$gray-700: #495057;
+$gray-800: #2d2d2d;
+$gray-900: #1d262d;
+
+$colors: (
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "orange": $orange,
+    "dark": $dark,
+    "muted": $muted,
+    "purple": $purple,
+    "pink": $pink,
+    "white": $white,
+    "light": $light
+);
+// Body Background
+$body-bg:                   #f5f5f5;
+$box-shadow:                0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+$box-shadow-lg:             0px 8px 48.75px 16.25px rgba(197, 203, 214, 0.45);
+
+
+// Base font
+$font-size-base:              16px;
+
+$font-family-base:            'Nunito Sans', sans-serif;
+$font-family-secondary:       'Nunito Sans', sans-serif;
+

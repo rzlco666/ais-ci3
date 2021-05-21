@@ -1,0 +1,109 @@
+//
+// contact.scss
+//
+
+
+textarea.form-control {
+  height: auto !important;
+}
+
+.contact-social{
+  i{
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    border: 1px solid rgba($white, 0.5);
+    background-color: $primary;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    color: $white;
+    &:hover{
+      background-color: $white;
+      color: $primary;
+      border: 1px solid rgba($white, 0.5);
+    }
+  }
+}
+
+.error {
+  margin: 8px 0px;
+  display: none;
+  color: $danger;
+}
+
+#ajaxsuccess {
+  font-size: 16px;
+  width: 100%;
+  display: none;
+  clear: both;
+  margin: 8px 0px;
+}
+
+.error_message {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $danger;
+  border: 2px solid $danger;
+}
+
+.contact-loader {
+  display: none;
+}
+
+#success_page {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.custom-form {
+  .form-control {
+      height: 44px;
+      font-size: 15px;
+      padding-left: 15px;
+      border-color: #e6eef6;
+      color: $muted;
+  }
+  .form-control:focus {
+    border-color: $primary;
+      outline: 0;
+      box-shadow: none;
+  }
+  .contact-lable{
+    position: absolute;
+    left: 27px;
+    top: 7px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $muted;
+    background: #fbfdfe;
+    margin: 0px;
+    padding: 0px 7px;
+    z-index: 1;
+  }
+}
+
+
+// LOGIN PAGES
+
+
+.account-home-btn{
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  z-index: 1;
+}
+
+.login-box{
+  box-shadow: $box-shadow;
+}
+
+.login-img{
+  padding: 90px 0px;
+}
+
+.bg-account-pages{
+  background-image: url(../images/bg-1.png);
+  background-position: center;
+}

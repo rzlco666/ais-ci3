@@ -1,0 +1,67 @@
+//
+// testimonail.scss
+//
+
+
+.carousel-indicators {
+    align-items: center;
+    position: relative;
+    left: 170px;
+    li{
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .active {
+        opacity: 1;
+        border: 3px solid $primary;
+        z-index: 3;
+    }
+}
+
+
+.client-title {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.client-icon{
+    i{
+        font-size: 50px;
+        color: $primary;
+    }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    background-size: 100% 40%;
+    border-radius: 50%;
+    
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+}
+
+
+// CLIENTS SCSS
+
+.bg-clients{
+    border-radius: 0px 0px 300px 0px;
+    .client-images{
+        img{
+            opacity: 0.5;
+        }
+    }
+}
+

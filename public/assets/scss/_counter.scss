@@ -1,0 +1,38 @@
+//
+// counter.scss
+//
+
+
+.count-box{
+  padding-right: 50px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  width: 125px;
+  .count-plus{
+      font-size: 20px;
+      position: relative;
+      top: -8px;
+  }
+}
+
+
+// video
+
+.play-icon-circle {
+    background: $primary;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+
+  .bg-cta{
+      background-image: url(../images/bg-4.png);
+      background-position: center;
+      border-radius: 0px 0px 0px 250px;
+  
+  }

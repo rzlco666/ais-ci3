@@ -1,0 +1,181 @@
+//
+// helper.scss
+//
+
+
+.section {
+    padding-top: 100px;    
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 0.6rem 1.3rem;
+    transition: all 0.4s;
+    font-weight: 600;
+    &:hover{
+        outline: none;
+        text-decoration: none;
+        transform: translateY(-4px);
+    }
+}
+
+.btn-sm{
+    padding: 0.4rem 1rem;
+    font-size: .875rem;
+}
+
+.btn-rounded{
+    border-radius: 30px;
+}
+
+// font-size
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-17 {
+    font-size: 17px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+// line-height
+
+.line-height_1_4 {
+    line-height: 1.4;
+}
+
+.line-height_1_6 {
+    line-height: 1.6;
+}
+
+.line-height_1_8 {
+    line-height: 1.8;
+}
+
+
+// Letter-spacing
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 3px;
+}
+
+.letter-spacing-4 {
+    letter-spacing: 4px;
+}
+
+// box-shadow
+
+.box-shadow{
+    box-shadow: 0 0 40px rgba(95,125,149,0.1);
+}
+.box-shadow-lg{
+    box-shadow: 0 5px 35px 0 rgba(95,125,149,.15);
+}
+
+// read More
+
+.read-more{
+    color: $dark;
+    font-weight: 500;
+      padding: 2px 0px;
+  
+    &:hover{
+      color: $primary;
+      padding: 2px 0px;
+      transition: all 0.3s;
+    
+    }
+    i {
+      font-size: 16px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+
+//   overlay
+
+.bg-overlay {
+    background-color: rgba(35, 37, 47, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// title
+
+.title-box{
+    .title-sub-title{
+        background: rgba($primary, 0.2);
+        padding: 7px 22px;
+        display: inline;
+        border-radius: 30px;
+        font-size: 13px;
+    }
+    .title-heading{
+        font-size: 30px;
+    }
+}

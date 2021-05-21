@@ -1,0 +1,191 @@
+  //
+// menu.scss
+//
+
+.navbar-custom {
+    padding: 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+
+    .navbar-nav {
+        li {
+            a {
+                line-height: 26px;
+                color: $muted;
+                font-size: 15px;
+                text-transform: capitalize;
+                transition: all 0.5s;
+                background-color: transparent !important;
+                padding: 25px 0;
+                margin: 0 10px;
+                font-weight: 600;
+            }
+            
+
+        }
+    }
+}
+
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: $dark;
+}
+
+.navbar-custom .navbar-nav li a.active,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active {
+    color: $primary !important;
+}
+
+.navbar-toggle {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: $white;
+}
+
+.logo {
+    .logo-light {
+        display: inline-block;
+    }
+    .logo-dark {
+        display: none;
+    }
+}
+
+.nav-sticky {
+    .logo {
+        .logo-dark {
+            display: inline-block;
+        }
+        .logo-light {
+            display: none;
+        }
+    }
+
+    .btn-soft-light {
+        background-color: rgba($primary, 0.25) !important;
+        color: $primary !important;
+    }
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+
+.navbar-custom {
+    .navbar-toggles {
+        padding: .25rem .75rem;
+        font-size: 18px;
+        background: 0 0;
+        border: 1px solid transparent;
+        color: $white;
+        outline: 0;
+    }
+
+    .navbar-toggles-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+    }
+}
+
+.menu-toggle {
+    padding: 4.5px 10px !important;
+}
+
+.menu-toggle {
+    span {
+        line-height: 27px;
+    }
+}
+
+.navbar-button{
+    margin-left: 10px;
+}
+/*---NAVBAR LIGHT--*/
+
+.navbar-light {
+    .navbar-nav {
+        li {
+            a {
+                color: rgba($white, 0.7) !important
+            }
+        }
+        li a.active,
+        li a:hover,
+        li a:active {
+            color: $white !important;
+        }
+    }
+   .navbar-toggler{
+       border: none;
+   }
+}
+
+/*---NAVBAR STICKY--*/
+
+.nav-sticky{
+    &.navbar-custom {
+        margin-top: 0px;
+        padding: 0;
+        background-color: $white;
+        box-shadow: $box-shadow;
+
+        &.sticky-dark {
+            background-color: $white;
+            top: 0;
+        }
+    }
+    .logo {
+        color: $dark !important;
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                color: $dark !important;
+            }
+        }
+    }
+    .btn-custom-light{
+        background: rgba(($primary), 0.1) !important;
+        border-color:rgba(($primary), 0.01) !important;
+        color: $primary;
+        &:hover, &:focus, &:active,
+        &.active, &.focus, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled):active:focus,
+        .open > .dropdown-toggle.btn-primary {
+            background: rgba(($primary), 0.1) !important;
+            border-color:rgba(($primary), 0.01) !important;
+            color: $primary;
+        }
+    
+    }
+}
+
+
+.nav-sticky.navbar-custom .navbar-nav li a.active,
+.nav-sticky.navbar-custom .navbar-nav li a:hover,
+.nav-sticky.navbar-custom .navbar-nav li a:active {
+    color: $primary !important;
+}
+
+.nav-sticky.navbar-custom .navbar-toggles {
+    padding: .25rem .75rem;
+    border: 1px solid transparent;
+    outline: 0;
+}
+
+.nav-sticky .navbar-nav {
+    margin-top: 0px;
+}

@@ -1,0 +1,279 @@
+//
+// home.scss
+//
+
+
+.home-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-desc-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.bg-home {
+  position: relative;
+  padding: 240px 0px 240px 0px;
+  border-radius: 0px 0px 0px 450px;
+}
+
+.home-badge{
+  p{
+    background-color: $light;
+    display: inline-block;
+    padding: 4px 20px;
+    border-radius: 4px;
+    border: 1px solid #f6f6f6;
+  }
+}
+
+.home-content{
+  .home-title{
+    font-size: 45px;
+  }
+}
+
+
+.home-img{
+  position: relative;
+  .animation-1{
+      position: relative;
+      box-shadow: 0px 12px 50px 0px rgba(0, 0, 0, 0.14); 
+      border-radius: 30px 30px 0 0;         
+  }
+  .animation-2{
+      position: absolute;
+      bottom: 60px;
+      right: -30px;
+      animation: bounce 7.5s infinite alternate;
+  }
+}
+
+
+.home-img{
+  .animation-1{
+      width: 38px;
+      height: 38px;
+      border: 7px solid #f8c101;
+      border-radius:50%;
+      position: absolute;
+      right: -84px;
+      bottom: 46px;
+      animation-name: zoom1;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+  .animation-2 {
+      border-radius: 50%;
+      background-color: #2f3c71;
+      box-shadow: 0px 20px 30px 0px rgba(48, 61, 114, 0.4);
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -60px;
+      right: 60px;
+      animation: spin 2s infinite alternate;
+  }      
+  .animation-3 {
+      border-radius: 50%;
+      background-color: #f5828b;  
+      box-shadow: 0px 20px 30px 0px rgba(245, 130, 139, 0.4);
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      bottom: 50px;
+      left: -45px;    
+      animation: spin 3s infinite alternate;          
+  }  
+
+}
+
+
+
+
+
+
+/*** Zoom ***/
+
+@keyframes zoom1 {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+
+
+/*** Spin 2 ***/ 
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+
+
+
+
+/*** Move through Parent ***/
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// home-2
+
+.home-bg-2{
+  background-image: url(../images/bg-3.jpg);
+  border-radius: 0;
+}
+
+
+// home-4
+
+
+
+.home-slider {
+  position: relative;
+}
+
+.home-slider .carousel-control-next,
+.carousel-control-prev {
+  width: 6%;
+}
+
+.home-slider .carousel-item,
+.home-slider .carousel {
+  height: 100vh;
+  width: 100%;
+}
+
+.home-slider .carousel-item {
+  background-position: center center;
+  background-size: cover;
+}
+
+// home-3
+
+.home-bg-3{
+  background-image: url(../images/bg-5.png);
+  background-position: center;
+}
+
+
+.search-form {
+input {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 17px;
+    color: $muted !important;
+    border: none;
+    outline: none !important;
+    padding-right: 160px;
+    padding-left: 30px;
+    background-color: $white;
+    border-radius: 30px;
+    box-shadow: $box-shadow;
+}
+button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    outline: none !important;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 9px 30px;
+}
+form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+}
+}
+
+
+
+
+// HOME 5
+
+.home-bg-5{
+  background-image: url(../images/bg-1.png);
+  border-radius: 0;
+}
+
+
+.flex-control-paging li a {
+  border-radius: 20px;
+  box-shadow: 0 0 0 0 $primary;
+  height: 12px;
+  width: 12px;
+  opacity: 1;
+  border: 2px solid $primary !important;
+  background: $primary;
+}
+
+.flex-control-paging li a:hover {
+  background: $primary;
+}
+
+.main-slider .flex-control-paging li a.flex-active {
+  background-color: transparent;
+}
+
+.flex-control-nav {
+  bottom: -70px;
+}
+
+// home-6
+
+.home-registration-form {
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  .registration-form {
+    label {
+      font-size: 15px;
+    }
+  }
+}
+
+.registration-input-box {
+  border: none;
+  border-radius: 0px;
+  color: $muted;
+  border-bottom: 1px solid #c5c5c5;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  &:focus{
+    border-color: $primary;
+  }
+}

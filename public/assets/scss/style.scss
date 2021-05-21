@@ -1,0 +1,41 @@
+/* Template Name: Thamza
+   Author: Themesdesign
+   Version: 1.0.0
+   File Description: Main Css file of the template
+*/
+
+/****************************************\
+
+01.general
+02.helper
+03.components
+04.menu
+05.home
+06.services
+07.counter
+08.pricing
+09.testimonial
+10.team
+11.contact
+12.footer
+13.responsive
+
+*****************************************/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "services";
+@import "counter";
+@import "pricing";
+@import "testimonial";
+@import "team";
+@import "contact";
+@import "footer";
+@import "responsive";
+
+
+
