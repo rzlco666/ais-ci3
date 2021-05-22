@@ -39,6 +39,12 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label for="url">Alamat Website</label>
+                                        <input type="text" class="form-control" value="<?php echo $project->url; ?>" name="url" id="url"
+                                            placeholder="Masukkan alamat website">
+                                    </div>
+
+                                    <div class="form-group">
                                         <label for="owner">Nama Developer</label>
                                         <input type="text" class="form-control" value="<?php echo $project->owner; ?>" name="owner" id="owner"
                                             placeholder="Masukkan nama developer">

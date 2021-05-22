@@ -38,6 +38,12 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label for="url">Alamat Website</label>
+                                        <input type="text" class="form-control" name="url" id="url"
+                                            placeholder="Masukkan alamat website">
+                                    </div>
+
+                                    <div class="form-group">
                                         <label for="owner">Nama Developer</label>
                                         <input type="text" class="form-control" name="owner" id="owner"
                                             placeholder="Masukkan nama developer">

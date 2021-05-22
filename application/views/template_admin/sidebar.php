@@ -16,30 +16,30 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item <?php if ($title == 'Dashboard') echo "active"; ?>">
                             <a href="<?= base_url(); ?>home" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item  has-sub">
+                        <li class="sidebar-item <?php if ($title == 'Create Project') echo "active"; ?> <?php if ($title == 'List Project') echo "active"; ?> has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-collection-fill"></i>
                                 <span>Project</span>
                             </a>
-                            <ul class="submenu ">
-                                <li class="submenu-item ">
+                            <ul class="submenu <?php if ($title == 'Create Project') echo "active"; ?> <?php if ($title == 'List Project') echo "active"; ?>">
+                                <li class="submenu-item <?php if ($title == 'Create Project') echo "active"; ?>">
                                     <a href="<?= base_url(); ?>upload/create">Add Project</a>
                                 </li>
-                                <li class="submenu-item ">
+                                <li class="submenu-item <?php if ($title == 'List Project') echo "active"; ?>">
                                     <a href="<?= base_url(); ?>upload">List Project</a>
                                 </li>
                             </ul>
                         </li>
 
-                        <li class="sidebar-item">
-                            <a href="application-chat.html" class='sidebar-link'>
+                        <li class="sidebar-item <?php if ($title == 'Kotak Masuk') echo "active"; ?>">
+                            <a href="<?= base_url(); ?>pesan" class='sidebar-link'>
                                 <i class="bi bi-chat-dots-fill"></i>
                                 <span>Kotak Masuk</span>
                             </a>

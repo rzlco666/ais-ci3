@@ -81,7 +81,10 @@
                                     ?>
                                     <tr>
                                         <td width="10%"><h6><?php echo $row->nama_project; ?></h6></td>
-                                        <td width="30%"><?php echo $row->deskripsi_project; ?></td>
+                                        <td width="30%">
+                                            <?php echo $row->deskripsi_project; ?><br>
+                                            <a href="<?php echo $row->url; ?>" target="_blank"><small><?php echo $row->url; ?></small></a>
+                                        </td>
                                         <td width="25%">
                                             <p><i class="bi bi-person-fill"></i> <span><?php echo $row->owner; ?></span></p>
                                             <p><i class="bi bi-phone-fill"></i> <span><?php echo $row->no_telp; ?></span></p>

@@ -12,8 +12,10 @@ class Upload extends CI_Controller {
 
 	public function create()
 	{
+		$data['title'] = 'Create Project';
+
 		$this->load->view('template_admin/meta');
-		$this->load->view('template_admin/sidebar');
+		$this->load->view('template_admin/sidebar',$data);
 		$this->load->view('project/create');
 		$this->load->view('template_admin/footer');
 	}
@@ -36,6 +38,7 @@ class Upload extends CI_Controller {
 			$file_encode=base64_encode($imgdata);
 			$data['nama_project'] = $this->input->post('nama_project');
 			$data['deskripsi_project'] = $this->input->post('deskripsi_project');
+			$data['url'] = $this->input->post('url');
 			$data['owner'] = $this->input->post('owner');
 			$data['no_telp'] = $this->input->post('no_telp');
 			$data['email'] = $this->input->post('email');
@@ -70,6 +73,7 @@ class Upload extends CI_Controller {
 			$id = $this->input->post('id_project');
 			$data['nama_project'] = $this->input->post('nama_project');
 			$data['deskripsi_project'] = $this->input->post('deskripsi_project');
+			$data['url'] = $this->input->post('url');
 			$data['owner'] = $this->input->post('owner');
 			$data['no_telp'] = $this->input->post('no_telp');
 			$data['email'] = $this->input->post('email');
@@ -87,6 +91,7 @@ class Upload extends CI_Controller {
 			$file_encode=base64_encode($imgdata);
 			$data['nama_project'] = $this->input->post('nama_project');
 			$data['deskripsi_project'] = $this->input->post('deskripsi_project');
+			$data['url'] = $this->input->post('url');
 			$data['owner'] = $this->input->post('owner');
 			$data['no_telp'] = $this->input->post('no_telp');
 			$data['email'] = $this->input->post('email');
@@ -112,9 +117,10 @@ class Upload extends CI_Controller {
 	public function index()
 	{
 		$data['berkas'] = $this->db->get('project');
+		$data['title'] = 'List Project';
 
 		$this->load->view('template_admin/meta');
-		$this->load->view('template_admin/sidebar');
+		$this->load->view('template_admin/sidebar',$data);
 		$this->load->view('project/index',$data);
 		$this->load->view('template_admin/footer');
 	}

@@ -11,6 +11,10 @@
     <!-- css -->
     <link href="<?= base_url(); ?>/public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url(); ?>/public/assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/assets_admin/vendors/dripicons/webfont.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/public/assets_admin/css/pages/dripicons.css">
+
      <!-- flexslider slider -->
      <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/public/assets/css/flexslider.css" />
     <!--Slider-->

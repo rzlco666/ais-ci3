@@ -54,15 +54,46 @@
                     <div class="col-lg-6">
                             <div class="services-box p-4 mt-4">
                         
-                            <a href="#" target="_blank">
+                            <a href="<?php echo $row->url; ?>" target="_blank">
                                 <img style="border-radius: 2%;" src="data:<?php echo $row->nama_thumbnail; ?>;base64,<?php echo $row->thumbnail; ?>" height="100%" width="100%">
                             </a>
 
-                            <h5 class="mt-4"><a href="#" target="_blank"><?php echo $row->nama_project; ?></a></h5>
+                            <h5 class="mt-4"><a href="<?php echo $row->url; ?>" target="_blank"><?php echo $row->nama_project; ?></a></h5>
                             <p class="text-muted mt-3"><?php echo $row->deskripsi_project; ?></p>
+                            <table border="0">
+                                <tr>
+                                    <td style="color: #20c997;"><div class="icon dripicons-brush"></div></td>
+                                    <td>&nbsp;</td>
+                                    <td class="text-muted">Developer</td>
+                                    <td class="text-muted">:</td>
+                                    <td class="text-muted"><b><?php echo $row->owner; ?></b></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #20c997;"><div class="icon dripicons-phone"></div></td>
+                                    <td>&nbsp;</td>
+                                    <td class="text-muted">No. Telp.</td>
+                                    <td class="text-muted">:</td>
+                                    <td class="text-muted"><?php echo $row->no_telp; ?></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #20c997;"><div class="icon dripicons-mail"></div></td>
+                                    <td>&nbsp;</td>
+                                    <td class="text-muted">E-mail</td>
+                                    <td class="text-muted">:</td>
+                                    <td class="text-muted"><?php echo $row->email; ?></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="color: #20c997;"><div class="icon dripicons-location"></div></td>
+                                    <td>&nbsp;</td>
+                                    <td class="text-muted">Alamat</td>
+                                    <td class="text-muted">:</td>
+                                    <td class="text-muted"><?php echo $row->alamat; ?></td>
+                                </tr>
+                            </table>
 
                             <div class="mt-3">
-                                <a href="#" target="_blank" class="text-primary f-16">Learn More <i class="mdi mdi-arrow-right ml-1"></i></a>
+                                <a href="<?php echo $row->url; ?>" target="_blank" class="text-primary f-16">Learn More <i class="mdi mdi-arrow-right ml-1"></i></a>
                             </div>
 
                         </div>
@@ -109,19 +140,29 @@
                 <div class="col-lg-6">
                     <div class="custom-form mt-4">
                         <div id="message"></div>
-                        <form method="post" action="#" name="contact-form" id="contact-form">
+                        <form method="post" action="<?php echo base_url(); ?>landing/proses">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="form-group mt-3">
-                                        <label class="contact-lable">First Name</label>
-                                        <input name="name" id="name" class="form-control" type="text">
+                                        <?php 
+                                            if($this->session->flashdata('success_kirim') !='')
+                                            {
+                                                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">';
+                                                echo $this->session->flashdata('success_kirim');
+                                                echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>';
+                                                echo '</div>';
+                                            }
+                                        ?>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-6">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
                                     <div class="form-group mt-3">
-                                        <label class="contact-lable">Last Name</label>
-                                        <input name="name" id="lastname" class="form-control" type="text">
+                                        <label class="contact-lable">Full Name</label>
+                                        <input required name="name" id="name" class="form-control" type="text">
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +171,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group mt-3">
                                         <label class="contact-lable">Email Address</label>
-                                        <input name="email" id="email" class="form-control" type="text">
+                                        <input required name="email" id="email" class="form-control" type="email">
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +180,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group mt-3">
                                         <label class="contact-lable">Subject</label>
-                                        <input name="subject" id="subject" class="form-control" type="text">
+                                        <input required name="subject" id="subject" class="form-control" type="text">
                                     </div>
                                 </div>
                             </div>
@@ -147,15 +188,14 @@
                                 <div class="col-lg-12">
                                     <div class="form-group mt-3">
                                         <label class="contact-lable">Your Message</label>
-                                        <textarea name="comments" id="comments" rows="5"
+                                        <textarea required name="comments" id="comments" rows="5"
                                             class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mt-3 text-right">
-                                    <a href="#web" class="submitBnt smoothlink btn btn-primary btn-round">Send Message</a>
-                                    <div id="simple-msg"></div>
+                                    <button type="submit" class="submitBnt smoothlink btn btn-primary btn-round">Send Message</button>
                                 </div>
                             </div>
                         </form>
